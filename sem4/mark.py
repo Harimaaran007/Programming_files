@@ -1,0 +1,8 @@
+a= input("exam 1 mark")
+b= input("exam 2 mark")
+c= input("sports event")
+d= input("extra circular1")
+e= input("extra circular2")
+f= input("extra circular3")
+print((((a+b)/2)*0.5)+(c*0.2)+(((d+e+f)/3)*0.3))
+print((a=input ("exam1")(a=input("exam2")(((a+b)/2)*0.5)))
