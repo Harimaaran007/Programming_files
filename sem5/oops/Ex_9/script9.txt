@@ -1,0 +1,89 @@
+Script started on Mon 08 Sep 2025 12:30:27 PM IST
+[?1034h[23bee039@mepcolinux Ex9]$cat Ex9_!.c[K[K[K1.cpp
+#include<iostream>
+using namespace std;
+template<class T>
+T Great(T x,T y){
+	if(x>y)
+		return x;
+	else
+		return y;
+}
+int main(){
+	int a1,b1,R1;
+	float a2,b2,R2;
+	char a3,b3,R3;
+	cout<<"Enter 2 integer numbers: ";
+	cin>>a1>>b1;
+	cout<<"Enter 2 float numbers: ";
+	cin>>a2>>b2;
+	cout<<"Enter 2 character values: ";
+	cin>>a3>>b3;
+	R1=Great(a1,b1);
+	R2=Great(a2,b2);
+	R3=Great(a3,b3);
+	cout<<R1<<endl;
+	cout<<R2<<endl;
+	cout<<R3<<endl;
+	return 0;
+}
+[23bee039@mepcolinux Ex9]$c++ Ex91[K_1.cpp
+[23bee039@mepcolinux Ex9]$./a.out
+Enter 2 integer numbers: 1
+2
+Enter 2 float numbers: 3.5
+1.2
+Enter 2 character values: a
+H
+2
+3.5
+H
+[23bee039@mepcolinux Ex9]$cat Ex0[K9+[K_2.cpp
+#include<iostream>
+using namespace std;
+template<class t>
+class Stack{
+   t *A;
+   int top;
+   public:
+   Stack(){
+      top=-1;
+      A=new t(10);
+   }
+   void push(t k){
+      if(top<9){
+	 top=top+1;
+	 A[top]=k;
+      }
+      else{
+	 cout<<"Stack Overflow"<<endl;
+      }
+   }
+   void pop(){
+      if(top>=0){
+	 cout<<A[top]<<endl;
+	 top=top-1;
+      }
+      else{
+	 cout<<"Stack Underflow"<<endl;
+      }
+   }
+   ~Stack(){ delete[] A; }
+};
+int main(){
+   Stack<int> A1;
+   Stack<float> A2;
+   A1.push(10.5);
+   A1.pop();
+   A2.push(10.6);
+   A2.pop();
+   return 0;
+}
+[23bee039@mepcolinux Ex9]$c++ Ex9_2.cpp
+[23bee039@mepcolinux Ex9]$./a.out
+10.5
+10.6
+[23bee039@mepcolinux Ex9]$exit
+exit
+
+Script done on Mon 08 Sep 2025 12:31:07 PM IST

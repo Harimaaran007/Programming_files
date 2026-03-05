@@ -1,0 +1,15 @@
+def add(n,d):
+   setvalue.add(n)
+   print("The added element in the set is:",setvalue)
+def rem(n,d):
+   setvalue.remove(n)
+   print("The removed element in the set is:",setvalue)
+my_list=input("enter the values of the list")
+listvalue=list(my_list.split())
+print("list values are:",listvalue)
+setvalue=set(listvalue)
+print("set values are:",setvalue)
+a=input("enter the element to add in the set:")
+add(a,setvalue)
+b=input("enter the element to remove in the set:")
+rem(b,setvalue)

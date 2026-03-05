@@ -1,0 +1,99 @@
+Script started on Wed Feb 11 12:54:59 2026
+[23bee039@mepcolinux Ex6]$cat Ex1.py
+L1=[int(i) for i in list(input("Enter: ").split())]
+print("Result: ",tuple(L1))
+[23bee039@mepcolinux Ex6]$python3 Ex1.py
+List into tuple
+Enter: 1 2 3   
+Result:  (1, 2, 3)
+[23bee039@mepcolinux Ex6]$cat Ex2.py
+L1=[i for i in list(input("Enter: ").split())]
+T1=tuple(L1)
+print(T1)
+print(len(T1))
+[23bee039@mepcolinux Ex6]$pyto hon3 Ex2.py
+Enter: 1 2 hari
+('1', '2', 'hari')
+3
+[23bee039@mepcolinux Ex6]$cat Ex3.py
+T1=tuple(input("Enter: ").split())
+n=input("Enter: ")
+if n in T1:
+    print("Yes")
+else:
+    print("No")
+[23bee039@mepcolinux Ex6]$python3 Ex3.py
+Enter: 1 2 3
+Enter: 1
+Yes
+[23bee039@mepcolinux Ex6]$cat E     python3 Ex3.py
+Enter: 1 2 3
+Enter: 4
+No
+[23bee039@mepcolinux Ex6]$cat Ex4.py
+T1=tuple(input("Enter: ").split())
+L=[]
+for i in T1:
+    if i not in L:
+        L.append(i)
+print("Result: ",tuple(L))
+[23bee039@mepcolinux Ex6]$python3 Ex4.py
+Enter: 3 1 1 3 3 2 2
+Result:  ('3', '1', '2')
+[23bee039@mepcolinux Ex6]$cat EX x5.py
+T1=tuple(input("Enter: ").split())
+T2=tuple(input("Enter: ").split())
+T=(T1,T2)
+L=[]
+for i in T:
+   for j in i:
+      L.append(j)
+print("Input: ",T)
+print("Flattened: ",tuple(L))
+[23bee039@mepcolinux Ex6]$python3 Ex5.py
+Enter: 1 2 3
+Enter: 4 5 6
+Input:  (('1', '2', '3'), ('4', '5', '6'))
+Flattened:  ('1', '2', '3', '4', '5', '6')
+[23bee039@mepcolinux Ex6]$cat Ex6.py
+T1=tuple(input("Enter: ").split())
+T2=tuple(input("Enter: ").split())
+TR=T1+T2
+print("Result: ",TR)
+[23bee039@mepcolinux Ex6]$py ython3 Ex6.py
+Enter: 1 2 3
+Enter: 4 5 6
+Result:  ('1', '2', '3', '4', '5', '6')
+[23bee039@mepcolinux Ex6]$cat Ex7.pu y
+T1=tuple(input("Enter: ").split())
+n1=int(input("Enter start index: "))
+n2=int(input("Enter end index: "))
+TR=T1[n1:n2]
+print("Result: ",TR)
+[23bee039@mepcolinux Ex6]$python3 Ex7pu  .py
+Enter: 1 2 3 4 5 6 7
+Enter start index: 2
+Enter end index: 5
+Result:  ('3', '4', '5')
+[23bee039@mepcolinux Ex6]$cat Ex8.py
+items = []
+k = input("Enter keyword: ")
+print("Enter stuff: ")
+while (1):
+    x = input()
+    if x == k:
+        break
+    items.append(x)
+T = tuple(items)
+print("Result: ", T)
+[23bee039@mepcolinux Ex6]$python3 Ex8.y py
+Enter keyword: start
+Enter word: 
+1  
+dog
+2
+start
+Result:  ('1', 'dog', '2')
+[23bee039@mepcolinux Ex6]$exit
+
+Script done on Wed Feb 11 12:57:52 2026
